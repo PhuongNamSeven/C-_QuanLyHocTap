@@ -1,0 +1,375 @@
+/* ========================================================================== */
+/*                                                                            */
+/* Base CSS 2.0 for HTML5 websites                                            */
+/*                                                                            */
+/* Author: Károly György Tamás (Tom Károly) basecss@kgyt.hu                   */
+/* License: Public domain                                                     */
+/*                                                                            */
+/* http://kgyt.hu/faq/base.css/                                               */
+/*                                                                            */
+/* ========================================================================== */
+/*                                                                            */
+/* Deprecated tags not included!                                              */
+/* applet, basefont, center, dir, font, isindex, menu, s, strike, u, xmp      */
+/*                                                                            */
+/* ========================================================================== */
+/*                                                                            */
+/* Compressed version:                                                        */
+/* http://static.kgyt.hu/download/base.css/html5base-min.css                  */
+/*                                                                            */
+/* ========================================================================== */
+/*                                                                            */
+/* Note: .ir = image replacement                                              */
+/*                                                                            */
+/* ========================================================================== */
+/*                                                                            */
+/* display                                                                    */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav,
+section, hr { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; }
+.clearfix, .ir { display: block !important; }
+.clearfix:before, .clearfix:after { display: table !important; }
+.hidden, .ir br { display: none !important; }
+[hidden] { display: none !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* width                                                                      */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+.visuallyhidden { width: 1px !important; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	width: auto !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* height                                                                     */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+hr { height: 1px; }
+.visuallyhidden { height: 1px !important; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	height: auto !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* visibility                                                                 */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+.hidden, .invisible { visibility: hidden !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* margin                                                                     */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav,
+section, a, abbr, acronym, address, area, b, big, body, button, caption, cite,
+code, col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset, form, h1, h2, h3,
+h4, h5, h6, html, i, iframe, img, input, ins, kbd, label, legend, noframes,
+noscript, object, ol, optgroup, p, param, pre, q, samp, script, select, small,
+span, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr, tt,
+ul, var, ul li, ol li, nav ul, nav ol { margin: 0; }
+blockquote { margin: 1em 40px; }
+hr { margin: 1em 0; }
+.visuallyhidden { margin: -1px !important; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	margin: 0 !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* border                                                                     */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav,
+section, a, abbr, acronym, address, area, b, big, blockquote, body, button,
+caption, cite, code, col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset,
+form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, input, ins, kbd, label,
+legend, li, noframes, noscript, object, ol, optgroup, option, p, param, pre, q,
+samp, script, select, small, span, strong, sub, sup, tbody, textarea, tfoot,
+thead, tr, tt, ul, var, a img { border: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+hr { border-top: 1px solid #ccc;
+	border-right: 0; border-bottom: 0; border-left: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+table { border-top: 1px solid #000; border-right: 1px solid #000;
+	border-bottom: 0; border-left: 0; }
+td, th { border-top: 0; border-right: 0;
+	border-bottom: 1px solid #000; border-left: 1px solid #000; }
+.ir, .visuallyhidden { border: 0 !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* padding                                                                    */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav,
+section, a, abbr, acronym, address, area, b, big, body, caption, cite, code,
+col, colgroup, del, div, dfn, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5,
+h6, hr, html, i, iframe, img, ins, kbd, label, legend, noframes, noscript,
+object, optgroup, p, param, pre, q, samp, script, small, span, strong, sub, sup,
+table, tbody, td, tfoot, th, thead, tr, tt, var, ul li, ol li, nav ul, nav ol {
+	padding: 0; }
+dd, ul { padding: 0 0 0 1.2em; }
+ol { padding: 0 0 0 2em; }
+.visuallyhidden { padding: 0 !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* outline                                                                    */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav,
+section, a, abbr, acronym, address, area, b, big, blockquote, body, button,
+caption, cite, code, col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset,
+form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, input, ins, kbd, label,
+legend, li, noframes, noscript, object, ol, optgroup, option, p, param, pre, q,
+samp, script, select, small, span, strong, sub, sup, table, tbody, td, textarea,
+tfoot, th, thead, tr, tt, ul, var, :focus, a:hover, a:active { outline: 0; }
+a:focus { outline: thin dotted; }
+/* ========================================================================== */
+/*                                                                            */
+/* overflow                                                                   */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { overflow-y: scroll; }
+svg:not(:root) { overflow: hidden; }
+textarea { overflow: auto; }
+.ir, .visuallyhidden { overflow: hidden !important; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	overflow: visible !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* vertical-align                                                             */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav,
+section, a, abbr, acronym, address, area, b, big, blockquote, body, button,
+caption, cite, code, col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset,
+form, h1, h2, h3, h4, h5, h6, html, i, iframe, input, ins, kbd, label, legend,
+li, noframes, noscript, object, ol, optgroup, option, p, param, pre, q, samp,
+script, select, small, span, strong, sub, sup, table, tbody, tfoot, th, thead,
+tr, tt, ul, var { vertical-align: baseline; }
+img { vertical-align: middle; }
+textarea, td { vertical-align: top; }
+/* ========================================================================== */
+/*                                                                            */
+/* text-decoration                                                            */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html, ins { text-decoration: none; }
+del { text-decoration: line-through; }
+a:link, a:visited { text-decoration: underline; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: underline; }
+/* ========================================================================== */
+/*                                                                            */
+/* text-others                                                                */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+caption, th, td { text-align: left; }
+::selection { text-shadow: none; }
+.ir { text-indent: -999em !important; }
+.ir { text-align: left !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* white-space                                                                */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+/* ========================================================================== */
+/*                                                                            */
+/* list                                                                       */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+nav ul, nav ol { list-style: none; list-style-image: none; }
+ul { list-style: disc; }
+ul ul { list-style: circle; }
+ul ul ul { list-style: square; }
+ol { list-style: decimal; }
+ol ol { list-style: lower-alpha; }
+ol ol ol { list-style: lower-roman; }
+/* ========================================================================== */
+/*                                                                            */
+/* position, top, right, bottom, left                                         */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+sub, sup { position: relative; }
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+.visuallyhidden { position: absolute !important; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	position: static !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* font-family                                                                */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { font-family: Arial, Helvetica, Geneva, Lucida, Verdana, sans-serif; }
+code, kbd, pre, samp, tt, var {
+	font-family: "DejaVu Sans Mono", "Courier New", monospace; }
+a, abbr, acronym, address, area, b, big, blockquote, body, button, caption,
+cite, col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset, form, h1, h2, h3,
+h4, h5, h6, i, iframe, img, input, ins, label, legend, li, noframes, noscript,
+object, ol, optgroup, option, p, q, script, select, small, span, strong, sub,
+sup, table, tbody, td, textarea, tfoot, th, thead, tr, ul {
+	font-family: inherit; }
+/* ========================================================================== */
+/*                                                                            */
+/* font-weight                                                                */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { font-weight: normal; }
+b, strong, th, mark { font-weight: bold; }
+a, abbr, acronym, address, area, big, blockquote, body, button, caption, cite,
+code, col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset, form, h1, h2, h3,
+h4, h5, h6, i, iframe, img, input, ins, kbd, label, legend, li, noframes,
+noscript, object, ol, optgroup, option, p, pre, q, samp, script, select, small,
+span, sub, sup, table, tbody, td, textarea, tfoot, thead, tr, tt, ul, var {
+	font-weight: inherit; }
+/* ========================================================================== */
+/*                                                                            */
+/* font-style                                                                 */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { font-style: normal; }
+dfn, em, i, ins, mark { font-style: italic; }
+a, abbr, acronym, address, area, b, big, blockquote, body, button, caption,
+cite, code, col, colgroup, dd, del, div, dfn, dl, dt, fieldset, form, h1, h2,
+h3, h4, h5, h6, iframe, img, input, kbd, label, legend, li, noframes, noscript,
+object, ol, optgroup, option, p, pre, q, samp, script, select, small, span,
+strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr, tt, ul,
+var { font-style: inherit; }
+/* ========================================================================== */
+/*                                                                            */
+/* font-size                                                                  */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { font-size: 100%; }
+small { font-size: 85%; }
+big { font-size: 140%; }
+sub, sup { font-size: 75%; }
+h1 { font-size: 140%; }
+h2 { font-size: 125%; }
+h3 { font-size: 110%; }
+h4 { font-size: 100%; }
+h5 { font-size: 100%; }
+h6 { font-size: 100%; }
+a, abbr, acronym, address, area, b, blockquote, button, caption, cite, code,
+col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset, form, i, iframe, img,
+input, ins, kbd, label, legend, li, noframes, noscript, object, ol, optgroup,
+option, p, param, pre, q, samp, script, select, span, strong, table, tbody, td,
+textarea, tfoot, th, thead, tr, tt, ul, var { font-size: 100%; }
+body { font-size: 13px; }
+/* ========================================================================== */
+/*                                                                            */
+/* line-height                                                                */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { line-height: 1.231; }
+button, input { line-height: normal; }
+sub, sup { line-height: 0; }
+/* ========================================================================== */
+/*                                                                            */
+/* background, color                                                          */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+a, abbr, acronym, address, area, b, big, blockquote, button, caption, cite,
+code, col, colgroup, dd, del, div, dfn, dl, dt, em, fieldset, form, h1, h2, h3,
+h4, h5, h6, i, iframe, img, input, ins, kbd, label, legend, li, noframes,
+noscript, object, ol, optgroup, option, p, param, pre, q, samp, script, select,
+small, span, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr,
+tt, ul, var { background: transparent; }
+body, button, input, select, textarea { color: #222; }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+input:valid, textarea:valid { background-color: #ddf0dd; }
+ins { background: #ff9; color: #000; }
+mark { background: #ff0; color: #000; }
+a, a:link { color: #06c; }
+a:visited { color: #60f; }
+a:active { color: #c03; }
+::selection { background: #7f7f7f; color: #000; }
+.ir { background-color: transparent !important;
+	background-repeat: no-repeat !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* content                                                                    */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+.clearfix:before, .clearfix:after { content: "" !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* quotes                                                                     */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+blockquote, q { quotes: none; }
+/* ========================================================================== */
+/*                                                                            */
+/* cursor                                                                     */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+label { cursor: pointer; }
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer; }
+/* ========================================================================== */
+/*                                                                            */
+/* clear                                                                      */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+.clearer { clear: both !important; }
+.clearfix:after { clear: both !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* clip                                                                       */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+.visuallyhidden { clip: rect(0 0 0 0) !important; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* box-sizing                                                                 */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { box-sizing: content-box; }
+/* ========================================================================== */
+/*                                                                            */
+/* resize                                                                     */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+textarea { resize: vertical; }
+/* ========================================================================== */
+/*                                                                            */
+/* Other settings                                                             */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+table { empty-cells: show; caption-side: top; }
+.ir { direction: ltr !important; }
+.clearfix { zoom: 1 !important; }
+/* ========================================================================== */
+/*                                                                            */
+/* -webkit                                                                    */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { -webkit-text-size-adjust: 100%; }
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button; }
+input[type="search"] {
+	-webkit-appearance: textfield; -webkit-box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+/* ========================================================================== */
+/*                                                                            */
+/* -moz (Firefox specific settings)                                           */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+input[type="search"] { -moz-box-sizing: content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner {
+	margin: 0; border: 0; padding: 0; }
+::-moz-selection { text-shadow: none; background: #7f7f7f none; color: #000; }
+/* ========================================================================== */
+/*                                                                            */
+/* -ms (Internet Explorer specific settings)                                  */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+html { -ms-text-size-adjust: 100%; }
+/* ========================================================================== */
+

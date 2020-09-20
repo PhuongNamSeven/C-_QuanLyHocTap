@@ -1,0 +1,59 @@
+﻿@model WebQuanLyHocTap.Models.SinhVien
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section Header{
+    Thêm sinh viên
+}
+<div class="row">
+
+    <div class="col-lg-8">
+        @using (Html.BeginForm("Create", "SinhVien", FormMethod.Post))
+        {
+
+            <div class="p-5">
+
+                <div class="col-md-12 text-center">
+                    <h1 class="glyphicon-header">Cập nhật</h1>
+                </div>
+                <label>
+                    @Html.ValidationSummary(false, "", "error")
+                </label>
+
+
+                <br />
+
+
+                <form class="user">
+                    <div class="form-group">
+                        @*<input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">*@
+                        @Html.TextBoxFor(model => model.SinhVienID, new { @class = "form-control", @placeholder = "Nhập id sinh viên" })
+                    </div>
+                    <div class="form-group">
+                        @*<input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">*@
+                        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "Nhập username của sinh  viên" })
+                    </div>
+                    <div class="form-group">
+                        @*<input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">*@
+                        @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Nhập password sinh viên" })
+                    </div>
+
+                    <div class="form-group">
+                        @*<input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">*@
+                        @Html.TextBoxFor(model => model.TenSV, new { @class = "form-control", @placeholder = "Nhập tên sinh viên" })
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                        Thêm
+                    </button>
+
+                </form>
+
+            </div>
+        }
+
+    </div>
+</div>
+

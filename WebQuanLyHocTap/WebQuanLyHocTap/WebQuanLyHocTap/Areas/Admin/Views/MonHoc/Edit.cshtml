@@ -1,0 +1,57 @@
+﻿@model WebQuanLyHocTap.Models.MonHoc
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section Header{
+    Cập nhật môn học
+}
+<div class="row">
+
+    <div class="col-lg-8">
+        @using (Html.BeginForm("Edit", "MonHoc", FormMethod.Post))
+        {
+
+            <div class="p-5">
+
+                <div class="col-md-12 text-center">
+                    <h1 class="glyphicon-header">Cập nhật</h1>
+                </div>
+                <label>
+                    @Html.ValidationSummary(false, "", "error")
+                </label>
+
+
+                <br />
+
+
+                <form class="user">
+                    <div class="form-group">
+                        @*<input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">*@
+                        @Html.TextBoxFor(model => model.MonHocID, new { @class = "form-control", @placeholder = "Nhập Password" })
+                    </div>
+
+                    <div class="form-group">
+                        @*<input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">*@
+                        @Html.TextBoxFor(model => model.TenMonHoc, new { @class = "form-control", @placeholder = "Nhập Password" })
+                    </div>
+                    <div class="form-group">
+                        @*<input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">*@
+                        Đang khóa : @Html.RadioButtonFor(m => m.isLock, false)
+                        Mở khóa   : @Html.RadioButtonFor(m => m.isLock, true)
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                        Cập nhật
+                    </button>
+
+                </form>
+
+            </div>
+        }
+
+    </div>
+</div>
+
+
+

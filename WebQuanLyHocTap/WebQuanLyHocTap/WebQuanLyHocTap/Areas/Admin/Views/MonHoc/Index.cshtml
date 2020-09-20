@@ -1,0 +1,89 @@
+﻿@model PagedList.IPagedList<WebQuanLyHocTap.Models.MonHoc>
+@using PagedList.Mvc;
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Page Heading -->
+
+@section Header{
+    <h2 style="">QUẢN LÝ MÔN HỌC</h2>
+}
+@section jsFooter{
+
+
+    
+<script src="~/Assets/js/Controller/monhocController.js"></script>
+}
+
+<br />
+<br />
+<br />
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <br />
+    <h5 style="margin-left:20px">Thêm môn học :  @Html.ActionLink("Thêm", "Create") </h5>
+    <!--Tìm kiếm-->
+    @using (Html.BeginForm("Index", "MonHoc", FormMethod.Post))
+    {
+        <div>
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" style="margin-left:20px" class="col-4" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" name="search" value="@ViewBag.search">
+                    <div class="input-group-append">
+                        &nbsp; &nbsp; &nbsp;
+
+                        <button class="btn btn-primary" type="submit">Tìm Kiếm</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    }
+
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Môn Học ID</th>
+                        <th>Tên Môn Học</th>
+                        <th>Trang thái</th>
+                        <th>Chức năng</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MonHocID</td>
+                            <td>@item.TenMonHoc</td>
+                            <td>
+
+                                
+                                <a href="#" class="btn-active" data-id="@item.MonHocID">@(item.isLock ? "mở khóa" : "đang khóa")</a>
+                            </td>
+                            <td><a href="/Admin/MonHoc/Edit/@item.MonHocID">Sửa</a> </td>
+                        </tr>
+                    }
+
+
+
+
+                </tbody>
+
+            </table>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @search = @ViewBag.search }))
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,5 @@
+C:\Users\ASUS\Desktop\WebQuanLyHocTap\WebQuanLyHocTap\Model\bin\Debug\netstandard2.0\Model.deps.json
+C:\Users\ASUS\Desktop\WebQuanLyHocTap\WebQuanLyHocTap\Model\bin\Debug\netstandard2.0\Model.dll
+C:\Users\ASUS\Desktop\WebQuanLyHocTap\WebQuanLyHocTap\Model\obj\Debug\netstandard2.0\Model.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\WebQuanLyHocTap\WebQuanLyHocTap\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\WebQuanLyHocTap\WebQuanLyHocTap\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs

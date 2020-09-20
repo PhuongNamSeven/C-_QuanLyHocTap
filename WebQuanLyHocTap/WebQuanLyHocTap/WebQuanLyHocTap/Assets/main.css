@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/* Reset */
+* { font-size: 100%; margin: 0; }
+
+
+/* Global */
+html,body
+{
+	padding-left:30px;
+	padding-right:20px;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	background:#FFF;
+}
+
+h1{
+	font-size: 22px;
+	font-weight: normal;
+	padding-bottom:15px;
+	font-style: normal;
+}
+
+h3{
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom:5px;
+	font-style: normal;	
+}
+.clear
+{
+	padding-top:30px;
+}
+.date
+{
+white-space: nowrap;
+font-size:10px;
+color:#999;
+}
+
+
+
+/* Link */
+a { color: #0070b2; border-color: #0070b2; cursor: pointer; outline: none; }
+a:visited { color: #604080; border-color: #604080; }
+a.no-visited, .no-visited a { color: #0070b2; border-color: #0070b2; }
+a.a-black, .a-black a { color: #000; border-color: #000; }
+html body * a:hover { color: #f01a00; border-color: #f01a00; }
+
+
+/* Top */
+.top
+{	
+	width: 100%;
+	float: left;
+}
+
+
+.login-form
+{
+	
+	float:right;
+	text-align:right;
+	line-height: 30px;
+	font-size: 12px;
+	color:#999;
+}
+.login-form form
+{
+	padding-top: 10px;
+}
+
+
+/* Main Navigate */
+.nav
+{
+	position: relative;
+	float:left;
+	width: 98%;
+	height: 30px;
+	background-color:#DCF0FE;
+	padding-top: 10px;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	color:#4C4C4C;
+}
+
+.nav a
+{
+	font-size: 16px;
+	padding-left: 14px;
+	color:#4C4C4C;
+}
+
+.rss {float:right;}
+
+A.rss {
+ background: url('../img/rss.png');
+ background-repeat:no-repeat;
+ display: block; 
+ width: 26px; 
+ height: 26px;
+}
+
+A.rss:hover 
+{ 
+background: url('../img/rss2.png');
+background-repeat:no-repeat;
+}
+
+.primary-tab 
+{
+	position: relative;
+	background:#F7F7F7;
+	float: left;
+	margin-top:0px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 15px;
+	padding-top: 10px;
+	margin-right: 5px;
+	color:#4C4C4C;
+	font-size:18px;	
+}
+
+.primary-tab a { font-size: 18px;}
+
+#current{background:#DCF0FE;}
+
+
+
+/* R-Side */
+.cornerBox 
+{
+	position: relative;
+	background:#F7F7F7;
+	float: right;
+	width:240px;
+	margin-top:35px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 15px;
+	padding-top: 10px;
+	font-size: 11px;
+	color:#666;
+}
+.cornerBox a
+{
+    font-size: 13px;
+	color:#666;
+}
+.cornerBox h3
+{
+	color:#4C4C4C;
+	margin-bottom: 15px;
+}
+
+.corner { position: absolute; width: 10px; height: 10px; background: url('../img/bk.gif') no-repeat; font-size: 0%; }
+.cornerBl { position: absolute; width: 10px; height: 10px; background: url('../img/bbk.gif') no-repeat; font-size: 0%; }
+.cornerBoxInner { padding: 10px; }
+.TL { top: 0; left: 0; background-position: 0 0; }
+.TR { top: 0; right: 0; background-position: -10px 0; }
+.BL { bottom: 0; left: 0; background-position: 0 -10px; }
+.BR { bottom: 0; right: 0; background-position: -10px -10px; }
+
+
+.cornerBox ul,li
+{
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+padding: 0px;
+margin-bottom: 5px;
+margin-top: 5px;
+font-size: 13px;
+background-color:#F7F7F7;
+}
+
+#cat{color:#999;}
+
+/* Post Body */
+.post
+{
+	line-height: 1.6em;
+    padding-top: 35px;
+	padding-left: 10px;
+	font-size:14px;
+	float: left;
+	width: 65%;
+}
+.post p
+{
+	margin-bottom: 15px;
+}
+
+#tag
+{
+	background:#F0F8FF;
+	padding: 5px;
+	width: 150px;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+/* Form, Buttons, TextArea*/
+.button
+{
+background-color: #EFEFEF;
+border-bottom-color: #CDCDCD;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-left-color: #CDCDCD;
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: #CDCDCD;
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: #CDCDCD;
+border-top-style: solid;
+border-top-width: 1px;
+font-size: 13px;
+padding-bottom: 5px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 5px;
+text-align: center;	
+}
+
+/* Footer */
+.footer
+{
+	float:left;
+	margin-top:40px;
+	padding-top: 20px;
+	padding-bottom:25px;
+	width:100%;
+	font-size: 14px;
+	border-top-style:solid;
+	border-top-width:1px;
+	border-top-color:#CCC;
+}
+.footer a
+{
+	font-size:12px;
+}
+
+/* Stuff */
+#beta
+{
+	font-size:13px;
+	font-weight:bold;
+	color:#09C;
+}
+
+
+
+
+
+
+
+
